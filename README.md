@@ -1,158 +1,203 @@
 # Tugas Sistem Operasi 1
 
-**Nama**: Firas Rasendriya Athaillah  
-**NRP**: 3124500042  
-**Kelas**: D3 IT B  
+**Nama:** Firas Rasendriya Athaillah  
+**NRP:** 3124500042  
+**Kelas:** D3 IT B  
 
-## Konversi Bilangan
+## 1. Definisi Bilangan
 
-### 1. Bilangan Biner dan Heksadesimal
-- **Bilangan biner** adalah bilangan yang berbasis **dua (2)**.
-- **Bilangan heksadesimal** adalah bilangan yang berbasis **enam belas (16)**.
+a. **Bilangan biner** adalah bilangan yang berbasis dua (2).  
+b. **Bilangan heksadesimal** adalah bilangan yang berbasis enam belas (16).  
 
-### 2. Konversi Desimal ke Biner
-#### 1234₁₀ → ?
+## 2. Konversi Desimal ke Biner
+
+### a. 1234₁₀
 ```
 1234 : 2 = 617 sisa 0
- 617 : 2 = 308 sisa 1
- 308 : 2 = 154 sisa 0
- 154 : 2 =  77 sisa 0
-  77 : 2 =  38 sisa 1
-  38 : 2 =  19 sisa 0
-  19 : 2 =   9 sisa 1
-   9 : 2 =   4 sisa 1
-   4 : 2 =   2 sisa 0
-   2 : 2 =   1 sisa 0
-   1 : 2 =   0 sisa 1
+617 : 2 = 308 sisa 1
+308 : 2 = 154 sisa 0
+...
+Jadi: 10011010010₂
 ```
-**Jawaban**: `10011010010₂`
 
-#### 5670₁₀ → ?
+### b. 5670₁₀
 ```
 5670 : 2 = 2835 sisa 0
 2835 : 2 = 1417 sisa 1
-1417 : 2 =  708 sisa 1
- 708 : 2 =  354 sisa 0
- 354 : 2 =  177 sisa 0
- 177 : 2 =   88 sisa 1
-  88 : 2 =   44 sisa 0
-  44 : 2 =   22 sisa 0
-  22 : 2 =   11 sisa 0
-  11 : 2 =    5 sisa 1
-   5 : 2 =    2 sisa 1
-   2 : 2 =    1 sisa 0
-   1 : 2 =    0 sisa 1
+...
+Jadi: 1011000100110₂
 ```
-**Jawaban**: `1011000100110₂`
 
-### 3. Konversi Biner ke Desimal
-#### 10101010₂ → ?
-```
-1 × 2⁷ = 128
-0 × 2⁶ =  0
-1 × 2⁵ = 32
-0 × 2⁴ =  0
-1 × 2³ =  8
-0 × 2² =  0
-1 × 2¹ =  2
-0 × 2⁰ =  0
-```
-**Jawaban**: `170₁₀`
+## 3. Konversi Biner ke Desimal
 
-#### 01010101₂ → ?
+### a. 10101010₂
 ```
-0 × 2⁷ =  0
-1 × 2⁶ =  0
-0 × 2⁵ =  0
-1 × 2⁴ = 16
-0 × 2³ =  0
-1 × 2² =  4
-0 × 2¹ =  0
-1 × 2⁰ =  1
+2 + 8 + 32 + 128 = 170₁₀
 ```
-**Jawaban**: `85₁₀`
 
-### 4. Konversi Biner ke Oktal
-#### 101011111001₂ → ?
+### b. 01010101₂
+```
+1 + 4 + 16 + 64 = 85₁₀
+```
+
+## 4. Konversi Biner ke Oktal
+
+### a. 101011111001₂
 ```
 101 = 5
 011 = 3
 111 = 7
 001 = 1
+Jawaban: 5371₈
 ```
-**Jawaban**: `5371₈`
 
-### 5. Konversi Oktal ke Biner
-#### 2170₈ → ?
+## 5. Konversi Oktal ke Biner
+
+### a. 2170₈
 ```
 2 = 010
 1 = 001
 7 = 111
 0 = 000
+Jawaban: 010001111000₂
 ```
-**Jawaban**: `010001111000₂`
 
-### 6. Konversi Desimal ke Heksadesimal
-#### 1780₁₀ → ?
+## 6. Konversi Desimal ke Heksadesimal
+
+### a. 1780₁₀
 ```
 1780 : 16 = 111 sisa 4
- 111 : 16 =  6 sisa 15 (F)
-   6 : 16 =  0 sisa 6
+111 : 16 = 6 sisa F
+Jawaban: 06F4₁₆
 ```
-**Jawaban**: `06F4₁₆`
 
-### 7. Konversi Heksadesimal ke Desimal
-#### ABCD₁₆ → ?
-```
-A = 16³ × 10 = 40960
-B = 16² × 11 = 2816
-C = 16¹ × 12 = 192
-D = 16⁰ × 13 = 13
-```
-**Jawaban**: `43981₁₀`
+## 7. Konversi Heksadesimal ke Desimal
 
-### 8. Konversi Pecahan Desimal ke Biner
-#### 0.3125₁₀ → ?
+### a. ABCD₁₆
 ```
-0.3125 × 2 = 0.625 sisa 0
-0.625 × 2 = 1.25  sisa 1
-0.25  × 2 = 0.5   sisa 0
-0.5   × 2 = 1.0   sisa 1
+A = 163 * 10 = 40960
+B = 162 * 11 = 2816
+...
+Jawaban: 43981₁₀
 ```
-**Jawaban**: `0.0101₂`
 
-### 9. Konversi Desimal ke BCD
-#### 1987₁₀ → ?
+## 8. Konversi Pecahan Desimal ke Biner
+
+### a. 0,3125₁₀
+```
+0,3125 * 2 = 0,625 sisa 0
+0,625 * 2 = 1,25 sisa 1
+...
+Jawaban: 0,0101₂
+```
+
+## 9. Konversi Desimal ke Biner
+
+### a. 11,625₁₀
+```
+11 : 2 = 5 sisa 1
+...
+Jawaban: 1101,1010000101₂
+```
+
+## 10. Konversi Desimal ke Heksadesimal
+
+### a. 348,654₁₀
+```
+Jawaban: 15C,A78₁₆
+```
+
+## 11. Konversi Biner ke Desimal
+
+### a. 010100011,001111101₂
+```
+Jawaban: 83,245₁₀
+```
+
+## 12. Konversi BCD ke Biner
+
+### a. 1987
 ```
 1 = 0001
 9 = 1001
-8 = 1000
-7 = 0111
+...
+Jawaban: 0001 1001 1000 0111
 ```
-**Jawaban**: `0001 1001 1000 0111`
 
-### 10. Konversi ASCII
-#### Karakter "A" ke ASCII
-```
-A = 65₁₀ → 41₁₆
-```
-**Jawaban**: `41₁₆`
+## 13. Konversi Biner ke BCD
 
-### 11. Positif atau Negatif dalam Biner
-#### 01111111₂ → ?
+### a. 10100110000111₂
 ```
-0 × 2⁷ = 0
-1 × 2⁶ = 64
-1 × 2⁵ = 32
-1 × 2⁴ = 16
-1 × 2³ =  8
-1 × 2² =  4
-1 × 2¹ =  2
-1 × 2⁰ =  1
+0010 = 2
+1001 = 9
+...
+Jawaban: 2987
 ```
-**Jawaban**: `127 (Positif)`
+
+## 14. Konversi Biner ke BCH
+
+### a. 1101111100101110₂
+```
+1101 = C
+1111 = F
+...
+Jawaban: CF2E
+```
+
+## 15. Konversi BCH ke Heksadesimal
+
+### a. F0DE
+```
+Jawaban: F0DE₁₆
+```
+
+## 16. Penentuan Bilangan Positif atau Negatif
+
+### a. 01111111₂
+```
+Jawaban: Positif 127
+```
+
+## 17. Konversi ASCII Code ke Karakter
+
+### a. 4116
+```
+Jawaban: A
+```
+
+## 18. Konversi Karakter ke ASCII Code
+
+### a. A
+```
+Jawaban: 6116
+```
+
+## 19. Output ASCII dari PRINT X
+
+```
+Desimal: 80 82 73 78 84 32 88
+Hexadecimal: 50 52 49 4E 54 20 58
+```
+
+## 20. Konversi Bilangan Oktal ke Desimal
+
+### a. 654,276₈
+```
+Bilangan bulat: 6×64 + 5×8 + 4×1 = 428
+Bilangan pecahan: 2×0.125 + 7×0.015625 + 6×0.001953125 = 0.371
+Jawaban: 428.371₁₀
+```
+
+## 21. Konversi Bilangan Heksadesimal ke Desimal
+
+### a. 4C5,2B8₁₆
+```
+Bilangan bulat: 4×256 + 12×16 + 5×1 = 1221
+Bilangan pecahan: 2×0.0625 + 11×0.00390625 + 8×0.000244140625 = 0.1699
+Jawaban: 1221.1699₁₀
+```
 
 ---
 
-Format Markdown ini membuat isi tugas lebih rapi dan mudah dibaca!
+*Dokumen ini disusun oleh Firas Rasendriya Athaillah untuk memenuhi tugas Sistem Operasi 1.*
 
