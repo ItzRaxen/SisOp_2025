@@ -25,7 +25,8 @@ Sementara itu, **Multithread** memungkinkan satu proses untuk memiliki beberapa 
 
 ### a. Contoh Penggunaan Thread di Linux dengan `SumTask.java`
 
-![SumTask.java](https://github.com/user-attachments/assets/3a13b931-ecd5-4386-b5f5-6d7912e81921)
+![Screenshot 2025-04-19 191251](https://github.com/user-attachments/assets/508885be-c867-483e-bc49-ceb064a164ad)
+
 
 **Langkah-langkah:**
 
@@ -47,7 +48,7 @@ java SumTask
 
 ### b. Implementasi Thread di Linux dengan `thrd-posix.c`
 
-![thrd-posix.c](https://github.com/user-attachments/assets/190a4b32-a4de-4418-ba15-341991d32b9d)
+![Screenshot 2025-04-19 191912](https://github.com/user-attachments/assets/fe7c5230-7552-419f-93f5-054513070a3b)
 
 **Langkah-langkah:**
 
@@ -62,22 +63,6 @@ Salin kode dari: [thrd-posix.c](https://github.com/ferryastika/osc10e/blob/maste
 gcc -pthread thrd-posix.c -o thrd-posix
 ./thrd-posix 10
 ```
-
-### c. Implementasi Thread di Windows dengan `thrd-win32.c`
-
-![thrd-win32.c](https://github.com/user-attachments/assets/3d57eee4-3c00-47b7-ac9e-4bbdda7a638e)
-
-**Langkah-langkah:**
-
-Salin kode dari: [thrd-win32.c](https://github.com/ferryastika/osc10e/blob/master/ch4/thrd-win32.c)
-
-```bash
-gcc thrd-win32.c -o thrd-win32.exe
-./thrd-win32.exe 8
-```
-
----
-
 ## Penjelasan Esai
 
 ### a. Java Multithreading (`SumTask.java`)
@@ -102,10 +87,9 @@ Program `thrd-win32.c` juga membuat dua thread yang bertugas mencetak angka. Mes
 
 ## 3. Membuat PPT: Evolusi Prosesor Intel
 
-Referensi video: [Intel Processor Evolution - YouTube](https://www.youtube.com/watch?v=PT787d9odKk)
+**Tautan Presentasi:** 
 
-**Tautan Presentasi:**  
-[Google Slides PPT](https://docs.google.com/presentation/d/11Rw4ymkdiD37XrMSDI0ZHBiG6DflW4FV/edit?usp=drive_link&ouid=100329338476453495410&rtpof=true&sd=true)
+https://docs.google.com/presentation/d/1p7DhvzJzNJ7HFcEAsElM3UJC69o3Hu_O/edit?usp=sharing&ouid=118399304365511840784&rtpof=true&sd=true
 
 ---
 
